@@ -1,0 +1,60 @@
+.check {
+  display: none;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-family-Raleway);
+  padding: 1.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  border-bottom: 1px solid black;
+  top: 0;
+  z-index: -1;
+}
+.header__heading {
+  position: relative;
+  display: flex;
+}
+.header__heading::after {
+  content: "\f5fd";
+  position: absolute;
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  left: -45px;
+  top: 5px;
+  color: var(--Desaturated-Blue);
+  opacity: 0.4;
+}
+.navgition {
+  margin-left: auto;
+}
+body:has(#featuer:target) .navgition__featuer,
+body:has(#team:target) .navgition__team,
+body:has(#clients:target) .navgition__clients,
+body:has(#signin:target) .navgition__signin {
+  color: var(--Bright-Blue);
+  font-weight: bold;
+  text-decoration: underline;
+}
+.header__list {
+  display: flex;
+  margin-left: auto;
+}
+.header__link:link {
+  margin-left: 40px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.header__link:link:visited,
+.header__link:link:active {
+  color: var(--Desaturated-Blue);
+}

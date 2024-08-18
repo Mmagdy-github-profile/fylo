@@ -1,0 +1,37 @@
+.formation {
+  position: relative;
+  color: #ddd;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  padding: 40px 0;
+}
+.formation__title {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.form {
+  justify-self: end;
+}
+.form__input {
+  display: block;
+  outline: 0;
+  border: none;
+  padding: 5px 60px 5px 5px;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+}
+.form__button {
+  border: none;
+  color: #fff;
+  background-color: var(--Bright-Blue);
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease-in-out;
+}
+.form__button:hover {
+  background-color: var(--Light-dark-Gray);
+  color: black;
+  border-radius: 5px;
+}

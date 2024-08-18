@@ -1,0 +1,43 @@
+.featuer {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 120px;
+}
+.featuer__title {
+  font-family: var(--font-family-Raleway);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.text__lateer {
+  background-color: rgb(255, 255, 25);
+}
+.featuer__pragrph {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.featuer__div-img {
+  justify-self: end;
+}
+.featuer__img {
+  max-width: 100%;
+}
+.featuer__input {
+  width: 250px;
+  padding: 10px;
+  border: none;
+  border-bottom: 3px solid #ddd;
+  outline: 0;
+  /* background-color: transparent; */
+}
+.featuer__button {
+  border: none;
+  padding: 10px;
+  margin-left: 10px;
+  background-color: var(--Bright-Blue);
+  color: var(--Light-dark-Gray);
+  cursor: pointer;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease-in-out;
+}
+.featuer__button:hover {
+  background-color: var(--Desaturated-Blue);
+}
